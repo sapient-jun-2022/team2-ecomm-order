@@ -15,5 +15,5 @@ app.use(bodyParser.json({ type: 'application/json' }));
 
 
 
-app.use(cartRouter);
+app.use("/cart",cartRouter);
 app.listen(3002);

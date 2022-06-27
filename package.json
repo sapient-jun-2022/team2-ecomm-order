@@ -1,0 +1,28 @@
+{
+  "name": "ecomm",
+  "version": "1.0.0",
+  "description": "MongoDB Schema",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node -e js",
+    "debug": "nodemon app.js --exec babel-node -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^2.0.16"
+  }
+}

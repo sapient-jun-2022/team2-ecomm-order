@@ -2,23 +2,23 @@ import mongoose, { Schema } from "mongoose";
 
 const CustomerBillingSchema = new Schema({
   addressLine1:{
-    name:String,
+    type:String,
     required:true,
   },
   addressLine2:{
-    name:String,
+    type:String,
     required:true
   },
   city:{
-    name:String,
+    type:String,
     required:true
   },
   state:{
-    name:String,
+    type:String,
     required:true
   },
   zip:{
-    name:String,
+    type:String,
     required:true
   },
 }, { _id: false });
@@ -39,6 +39,7 @@ const CustomerSchema = new Schema(
     },
     billing:CustomerBillingSchema,
     shipping:CustomerBillingSchema
+  
   },
   { _id: false }
 );
@@ -74,7 +75,7 @@ export const OrderSchema = new Schema({
   products: [ProductSchema],
   total: {
     type: Number,
-    required: false,
+    required: true,
   },
 
 });

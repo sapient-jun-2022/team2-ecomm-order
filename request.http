@@ -5,7 +5,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6I
 
 {
     "customer":{
-        "customerId":"",
+        "customerId":"62b5a2f4b850dbaebb68b893",
         "name":"Himanshu Mahara",
         "email":"himanshu.mahara@publicissapient.com",
         "billing":{
@@ -24,16 +24,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6I
         }
 
     },
-    "product":{
-    "_id": "62b4970ffd5420b9ea5eeb89",
+    "products":[{
+    "productId": "62b4970ffd5420b9ea5eeb89",
     "title": "First Product 2",
     "description": "This is first product",
     "price": 40.21,
     "quantity":2,
+    "subtotal":40.21,
     "image": "IMAGE URL",
     "createdat": "2022-06-23T16:38:39.681Z",
     "__v": 0
-  }
+    
+  }],
+  "total":80
 
 }
 

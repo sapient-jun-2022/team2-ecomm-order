@@ -2,8 +2,8 @@ import res from "express/lib/response";
 import Order from "../models/orderModel";
 
 export const create = (req,res)=>{
-    if(req.user._id=== req.customer.customerId){
-        if(req.products.length){
+    if(req.user._id=== req.body.customer.customerId){
+        if(req.body.products.length){
             const order = new Order(req.body);
             order.save((err,order)=>{
                 if(err){

@@ -1,44 +1,9 @@
 ####### Order Create
 POST http://localhost:3003/order/create HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyYjVhMmY0Yjg1MGRiYWViYjY4Yjg5MyIsImVtYWlsIjoiaGltYW5zaHUubWFoYXJhQHB1YmxpY2lzc2FwaWVudC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRPeGUxeGNDYWw4LnZKelptSk9nNjguUGpPSDNqYVJWeEMzTnlnNnlVRWdWRktqN215aUxQaSIsIm5hbWUiOiJIaW1hbnNodSBNYWhhcmEyIiwiY3JlYXRlZGF0IjoiMjAyMi0wNi0yNFQxMTo0MTo0MC41ODlaIiwiX192IjowLCJjYXJ0Ijp7InByb2R1Y3RzIjpbeyJwcm9kdWN0SWQiOiI2MmI2ZTZiZTA3NWIwZjgyYjhmM2YzYzkiLCJ0aXRsZSI6IkZpcnN0IFByb2R1Y3QzIiwicXVhbnRpdHkiOjQsInByaWNlIjo1NC42Nywic3VidG90YWwiOjIxOC42OH1dLCJ0b3RhbCI6MjE4LjY4LCJfaWQiOiI2MmI3MjA3NDExMjg3OWFjYzM0MjMwMDQifX0sImlhdCI6MTY1NjMyNzAxN30.AnoOHrzqSPINCZW-G5JHDA-QTBumrLJu9CgSv938HF0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyYmJkNTVkYWEzYTExZTNjYjNlOWE0ZCIsImVtYWlsIjoiaGltYW5zaHUubWFoYXJhQHB1YmxpY2lzc2FwaWVudC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQwVEdodjhrYk5zLjdKUzhPcVpNUDAuM21BZnpUWllZdVJ5aC5KQ1VoWE5iUVBLdXNmenhnQyIsIm5hbWUiOiJIaW1hbnNodSBNYWhhcmEyIiwiY3JlYXRlZGF0IjoiMjAyMi0wNi0yOVQwNDozMDoyMS41NThaIiwiX192IjowLCJjYXJ0Ijp7InByb2R1Y3RzIjpbeyJwcm9kdWN0SWQiOiI2MmI0OTcwZmZkNTQyMGI5ZWE1ZWViODkiLCJ0aXRsZSI6IkZpcnN0IFByb2R1Y3QgMiIsInF1YW50aXR5Ijo4LCJwcmljZSI6NDAuMjEsInN1YnRvdGFsIjozMjEuNjh9LHsicHJvZHVjdElkIjoiNjJiYzBmNmQzYWY5ZTNlZWI0ZWIwNjkzIiwidGl0bGUiOiJMb2dpdGVjaCBXaXJlbGVzcyBNb3VzZSAyIiwicXVhbnRpdHkiOjE2LCJwcmljZSI6MzYwLCJzdWJ0b3RhbCI6NTc2MH1dLCJ0b3RhbCI6NjA4MS42OCwiX2lkIjoiNjJiYzYyMGZhNDA2ZmRlMTVhMjMyY2MwIn19LCJpYXQiOjE2NTcxNjkzODR9.fWe7mrGCs30oc80LWiKZmccZmUm9Kz2Wi3ye4umeBso
 
-{
-    "customer":{
-        "customerId":"62b5a2f4b850dbaebb68b893",
-        "name":"Himanshu Mahara",
-        "email":"himanshu.mahara@publicissapient.com",
-        "billing":{
-            "addressLine1":"House no: 458, Sector-13",
-            "addressLine2":"Vasundhara",
-            "city":"Ghaziabad",
-            "state":"U.P.",
-            "zip":"201012"
-        },
-        "shipping":{
-            "addressLine1":"House no: 458, Sector-13, Shipping",
-            "addressLine2":"Vasundhara",
-            "city":"Ghaziabad",
-            "state":"U.P.",
-            "zip":"201012"
-        }
-
-    },
-    "products":[{
-    "productId": "62b4970ffd5420b9ea5eeb89",
-    "title": "First Product 2",
-    "description": "This is first product",
-    "price": 40.21,
-    "quantity":2,
-    "subtotal":40.21,
-    "image": "IMAGE URL",
-    "createdat": "2022-06-23T16:38:39.681Z",
-    "__v": 0
-    
-  }],
-  "total":80
-
-}
+{"customer":{"customerId":"62bbd55daa3a11e3cb3e9a4d","name":"Himanshu Mahara2","email":"himanshu.mahara@publicissapient.com","billing":{"addressLine1":"House no: 458","addressLine2":"Sector -13","city":"Vasunndhara","state":"UP","zip":"201012"},"shipping":{"addressLine1":"House no: 458","addressLine2":"Sector -13","city":"Vasunndhara","state":"UP","zip":"201012"}},"products":[{"productId":"62bc0f6d3af9e3eeb4eb0693","title":"Logitech Wireless Mouse 2","quantity":3,"price":360,"image":"https://www.junglescout.com/wp-content/uploads/2021/01/product-photo-water-bottle-hero.png","description":"This is first product uploaded on cloud","subtotal":1080},{"productId":"62c596fd74c85f6103bcc1c9","title":"Logitech Wireless Mouse 3","quantity":4,"price":360,"image":"https://www.junglescout.com/wp-content/uploads/2021/01/product-photo-water-bottle-hero.png","description":"This is first product uploaded on cloud","subtotal":1440}],"total":2520}
 
 ####### Get Cart
 GET http://localhost:3002/cart HTTP/1.1

@@ -7,21 +7,21 @@ export const create = (req,res)=>{
             const order = new Order(req.body);
             order.save((err,order)=>{
                 if(err){
-                    res.send(err);
+                    res.json({status:false, error: err});
 
                 }else{
-                    res.json(order);
+                    res.json({status:true,order:order});
 
                 }
                 
             });
 
         }else{
-            res.send("No Order products found.");
+            res.json({status:false, error: 'No Order products found.'});
         }
 
     }else{
-        res.send("Customer is not active customer.");
+        res.json({status:false, error: 'Customer is not active customer.'});
     }
     
 }
